@@ -1,0 +1,17 @@
+[
+  {
+    "instruction": "What is requirement analysis?",
+    "input": "",
+    "output": "It is the process of understanding and documenting what users need from a system."
+  },
+  {
+    "instruction": "Why is requirement analysis important?",
+    "input": "",
+    "output": "It helps ensure the system meets user needs and prevents costly errors later."
+  },
+  {
+    "instruction": "Give an example of a functional requirement.",
+    "input": "",
+    "output": "The system must allow users to reset their password via email."
+  }
+]

@@ -1,0 +1,8 @@
+pip install transformers sentence-transformers faiss-cpu
+pip install sentence-transformers[train]
+pip install transformers datasets peft accelerate bitsandbytes
+pip install transformers datasets sentence-transformers faiss-cpu
+pip faiss
+pip install faiss
+pip install faiss-cpu
+pip install trl

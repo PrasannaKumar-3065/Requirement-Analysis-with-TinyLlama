@@ -1,0 +1,9 @@
+Project: Inventory Tracking System (Additional Requirements)
+
+1. Mobile application support is mandatory for warehouse staff.
+2. The application must respond to user actions within 2 seconds, even under peak load.
+3. The solution must comply with GDPR and ISO27001 security standards.
+4. The system should allow role-based access, with at least three levels: admin, manager, staff.
+5. Data should be backed up every 12 hours to a secure cloud service.
+6. The client has requested integration with SAP for finance-related modules.
+7. Delivery is expected no later than November 2025, but October 2025 is the preferred date.

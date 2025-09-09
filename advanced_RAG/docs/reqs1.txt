@@ -1,0 +1,9 @@
+Project: Inventory Tracking System
+
+1. The system must allow real-time tracking of stock items across multiple warehouses.
+2. Users should be able to generate automated inventory reports in PDF and Excel formats.
+3. The system must integrate with the company’s existing ERP within 3 months of deployment.
+4. Deadline for the project is October 2025.
+5. The system must handle up to 500 concurrent users without performance degradation.
+6. Security: all user logins must be protected with multi-factor authentication.
+7. The client for this project is ACME Corp.

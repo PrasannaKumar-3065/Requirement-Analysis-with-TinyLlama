@@ -1,0 +1,4 @@
+1. The system must allow users to reset their password via email.
+2. The project must be delivered by October 2025.
+3. The application should respond within 2 seconds under heavy load.
+4. The client is ACME Corp.

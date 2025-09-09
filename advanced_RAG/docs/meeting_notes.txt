@@ -1,0 +1,9 @@
+Meeting Notes — 12 June 2025
+
+- The client (ACME Corp) emphasized that the October 2025 deadline is non-negotiable.
+- Some internal stakeholders suggested November 2025 may be more realistic due to SAP integration delays.
+- Performance requirement was highlighted again: 2-second response time under heavy load.
+- Security officer reminded the team that GDPR compliance is critical, especially with European warehouses.
+- Client confirmed mobile app is top priority for warehouse staff.
+- Risk: Integration with ERP might slip due to lack of vendor support.
+- Another risk identified is scaling beyond 500 concurrent users if company grows faster than expected.
