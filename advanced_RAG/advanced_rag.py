@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 import os
 import glob
 import re
@@ -126,8 +127,8 @@ def dedup_bullets_semantic(bullets: List[str], threshold: float = 0.92, embedder
 # ----------------------------
 # Model setup (LoRA)
 # ----------------------------
-BASE_MODEL = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
-LORA_ADAPTER = "/home/yesituser/yesitprojects/venv/isoTracker_requirement_AI/advanced_RAG/lora-out"
+BASE_MODEL = os.getenv("BASE_MODEL")
+LORA_ADAPTER = os.getenv("ADAPTER_PATH")
 
 tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL)
 if tokenizer.pad_token is None:
@@ -171,7 +172,7 @@ def fuse_answer(bullets: List[str], query: str, embedder) -> str:
 # Main Advanced RAG pipeline
 # ----------------------------
 def advanced_rag(query: str,
-                 docs_folder="/home/yesituser/yesitprojects/venv/isoTracker_requirement_AI/advanced_RAG/docs",
+                 docs_folder=os.getenv("DOCUMENTS_PATH"),
                  top_k=10, top_m=6, use_rerank=True) -> Tuple[str, List[str]]:
     chunks, meta = load_and_chunk_docs(docs_folder)
     if not chunks:

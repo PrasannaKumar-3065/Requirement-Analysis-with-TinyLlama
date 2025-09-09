@@ -1,82 +1,152 @@
 [
   {
     "question": "What is the project deadline?",
-    "expected": "October 2025"
+    "answer": "October 2025",
+    "context": [
+      "The project deadline is October 2025.",
+      "The deadline was emphasized as non-negotiable by the client.",
+      "Some stakeholders suggested November 2025 due to ERP integration delays."
+    ]
   },
   {
     "question": "Who is the client?",
-    "expected": "ACME Corp"
+    "answer": "ACME Corp",
+    "context": [
+      "The client is ACME Corp, a leading manufacturer of warehouse equipment.",
+      "Meeting notes from June 2025 confirm the client as ACME Corp."
+    ]
   },
   {
     "question": "What are the performance requirements?",
-    "expected": "500 concurrent users; 2-second response time"
+    "answer": "500 concurrent users; 2-second response time",
+    "context": [
+      "The system must handle up to 500 concurrent users without performance degradation.",
+      "Performance requirement highlighted again: 2-second response time under heavy load."
+    ]
   },
   {
     "question": "What ERP system must the project integrate with?",
-    "expected": "SAP"
+    "answer": "SAP",
+    "context": [
+      "The system must integrate with SAP for finance-related modules.",
+      "ERP integration with SAP must be completed within 3 months of deployment."
+    ]
   },
   {
     "question": "Within how many months of deployment must ERP integration be completed?",
-    "expected": "3 months"
+    "answer": "3 months",
+    "context": [
+      "ERP integration must be completed within 3 months of deployment.",
+      "Risk: integration with ERP might slip due to lack of vendor support."
+    ]
   },
   {
     "question": "What is the maximum response time under heavy load?",
-    "expected": "2 seconds"
+    "answer": "2 seconds",
+    "context": [
+      "Performance requirement highlighted again: 2-second response time under heavy load."
+    ]
   },
   {
     "question": "Which security standards must the system comply with?",
-    "expected": "GDPR and ISO27001"
+    "answer": "GDPR and ISO27001",
+    "context": [
+      "The solution must comply with GDPR and ISO27001 security standards."
+    ]
   },
   {
     "question": "How many levels of role-based access are required?",
-    "expected": "3 levels (admin, manager, staff)"
+    "answer": "3 levels (admin, manager, staff)",
+    "context": [
+      "The system should allow role-based access with at least three levels: admin, manager, and staff."
+    ]
   },
   {
     "question": "What is the risk associated with vendor support?",
-    "expected": "Integration may slip due to lack of vendor support"
+    "answer": "Integration may slip due to lack of vendor support",
+    "context": [
+      "Risk: Integration with ERP might slip due to lack of vendor support."
+    ]
   },
   {
     "question": "What is the preferred project deadline according to stakeholders?",
-    "expected": "October 2025"
+    "answer": "October 2025",
+    "context": [
+      "The project deadline is October 2025.",
+      "Client emphasized it as non-negotiable.",
+      "Some stakeholders suggested November 2025 as more realistic."
+    ]
   },
   {
     "question": "What delivery timeline was also mentioned as a possible alternative?",
-    "expected": "November 2025"
+    "answer": "November 2025",
+    "context": [
+      "Some stakeholders suggested November 2025 as a more realistic delivery date.",
+      "Meeting notes indicated November 2025 as a backup timeline."
+    ]
   },
   {
     "question": "What is the main priority for the warehouse staff?",
-    "expected": "Mobile app"
+    "answer": "Mobile app",
+    "context": [
+      "The mobile app is a top priority for warehouse staff.",
+      "The client confirmed the mobile application as essential for staff."
+    ]
   },
   {
     "question": "How many users should the system handle concurrently?",
-    "expected": "500"
+    "answer": "500",
+    "context": [
+      "The system must handle up to 500 concurrent users without performance degradation."
+    ]
   },
   {
     "question": "What risk is associated with scaling beyond expected growth?",
-    "expected": "Scaling beyond 500 concurrent users if company grows faster than expected"
+    "answer": "Scaling beyond 500 concurrent users if company grows faster than expected",
+    "context": [
+      "Risk: scaling beyond 500 concurrent users if company grows faster than expected."
+    ]
   },
   {
     "question": "What is the name of the client’s company?",
-    "expected": "ACME Corp"
+    "answer": "ACME Corp",
+    "context": [
+      "The client is ACME Corp, a leading manufacturer of warehouse equipment."
+    ]
   },
   {
     "question": "What requirement was highlighted again in the meeting notes?",
-    "expected": "2-second response time under heavy load"
+    "answer": "2-second response time under heavy load",
+    "context": [
+      "Performance requirement highlighted again: 2-second response time under heavy load."
+    ]
   },
   {
     "question": "What type of system access must be supported?",
-    "expected": "Role-based access"
+    "answer": "Role-based access",
+    "context": [
+      "The system should allow role-based access with at least three levels: admin, manager, and staff."
+    ]
   },
   {
     "question": "Which finance-related module requires integration?",
-    "expected": "SAP"
+    "answer": "SAP",
+    "context": [
+      "The system must integrate with SAP for finance-related modules."
+    ]
   },
   {
     "question": "What are the concurrency requirements for the system?",
-    "expected": "500 concurrent users"
+    "answer": "500 concurrent users",
+    "context": [
+      "The system must handle up to 500 concurrent users without performance degradation."
+    ]
   },
   {
     "question": "What are the compliance requirements?",
-    "expected": "GDPR and ISO27001"
+    "answer": "GDPR and ISO27001",
+    "context": [
+      "The solution must comply with GDPR and ISO27001 security standards."
+    ]
   }
 ]
