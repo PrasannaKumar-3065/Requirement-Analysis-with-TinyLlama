@@ -11,6 +11,7 @@ from sentence_transformers import SentenceTransformer, CrossEncoder
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 
+load_dotenv()
 # ----------------------------
 # Text helpers
 # ----------------------------
@@ -63,7 +64,7 @@ def load_and_chunk_docs(folder: str) -> Tuple[List[str], List[Tuple[str, int]]]:
 
 def build_index(chunks: List[str], embedder_name="all-MiniLM-L6-v2"):
     """Encode chunks into FAISS index."""
-    embedder = SentenceTransformer(embedder_name)
+    embedder = SentenceTransformer(embedder_name, device="cuda")  # <--- force GPU
     embeddings = embedder.encode(chunks, convert_to_numpy=True).astype("float32")
     dim = embeddings.shape[1]
     index = faiss.IndexFlatIP(dim)
@@ -86,7 +87,7 @@ def rerank(query: str, retrieved, top_m=5, ce_model_name="cross-encoder/ms-marco
     """Rerank retrieved chunks with a cross-encoder."""
     if len(retrieved) <= top_m:
         return retrieved
-    cross = CrossEncoder(ce_model_name)
+    cross = CrossEncoder(ce_model_name, device="cuda")  # <--- force GPU
     pairs = [(query, r[0]) for r in retrieved]
     scores = cross.predict(pairs).tolist()
     rescored = [(r[0], r[1], s) for r, s in zip(retrieved, scores)]

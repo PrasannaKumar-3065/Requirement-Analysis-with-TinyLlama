@@ -3,13 +3,15 @@ from datasets import load_dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import LoraConfig, get_peft_model
 from trl import SFTTrainer, SFTConfig
-
+from dotenv import load_dotenv
+import os
+load_dotenv()
 # --------------------------
 # Config
 # --------------------------
-BASE_MODEL = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
-DATA_PATH = "/home/yesituser/yesitprojects/venv/isoTracker_requirement_AI/advanced_RAG/train_data_lora.json"
-OUTPUT_DIR = "/home/yesituser/yesitprojects/venv/isoTracker_requirement_AI/advanced_RAG/lora-out"
+BASE_MODEL = os.getenv("BASE_MODEL")  # e.g. "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+DATA_PATH = 'C:/Users/Admin/Desktop/venv/isoTracker_requirement_analysis_AI/advanced_RAG/train.jsonl'
+OUTPUT_DIR = os.getenv("OUTPUT_DIR", "./lora-out")
 
 BATCH_SIZE = 4
 GRAD_ACCUM = 4
@@ -30,7 +32,7 @@ if tokenizer.pad_token is None:
 model = AutoModelForCausalLM.from_pretrained(
     BASE_MODEL,
     torch_dtype=torch.float16 if use_cuda else torch.float32,
-    device_map="auto",
+    device_map="cuda" if use_cuda else "cpu",  # <--- force GPU if available
 )
 
 # --------------------------
@@ -70,6 +72,9 @@ def formatting_func(example):
 # --------------------------
 # Trainer config (SFTConfig)
 # --------------------------
+fp16_flag = use_cuda and not use_bf16
+bf16_flag = use_bf16
+
 sft_config = SFTConfig(
     output_dir=OUTPUT_DIR,
     per_device_train_batch_size=BATCH_SIZE,
@@ -82,10 +87,10 @@ sft_config = SFTConfig(
     max_grad_norm=1.0,
     warmup_ratio=0.03,
     lr_scheduler_type="cosine",
-    max_length=MAX_SEQ_LEN,  # TRL uses max_length (not max_seq_length)
+    max_length=MAX_SEQ_LEN,
     packing=False,
-    fp16=use_cuda,           # safe: only on CUDA
-    bf16=use_bf16,           # safe: only if supported
+    fp16=fp16_flag,   # Only one can be True
+    bf16=bf16_flag,   # Only one can be True
 )
 
 # --------------------------

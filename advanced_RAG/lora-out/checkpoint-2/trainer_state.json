@@ -26,7 +26,7 @@
       "attributes": {}
     }
   },
-  "total_flos": 34772607811584.0,
+  "total_flos": 35965663690752.0,
   "train_batch_size": 4,
   "trial_name": null,
   "trial_params": null

@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 import os
 import re
 from difflib import SequenceMatcher
+import torch
 
 load_dotenv()  # Loads variables from .env into environment
 
@@ -19,14 +20,17 @@ EVAL_DATA_PATH = os.getenv("EVAL_DATA_PATH")
 # -----------------------------
 print("Loading model...")
 tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL)
-model = AutoModelForCausalLM.from_pretrained(BASE_MODEL)
+model = AutoModelForCausalLM.from_pretrained(
+    BASE_MODEL,
+    torch_dtype="auto",
+    device_map="cuda" if torch.cuda.is_available() else "cpu"
+)
 # (LoRA weights merged already during training in previous module)
 
 pipe = pipeline(
     "text-generation",
     model=model,
     tokenizer=tokenizer,
-    device_map="auto",
 )
 
 # -----------------------------
