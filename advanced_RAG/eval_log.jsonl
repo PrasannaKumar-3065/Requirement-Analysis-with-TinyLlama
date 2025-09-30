@@ -1,0 +1,20 @@
+{"question": "What is the project deadline?", "predicted": "The project deadline is October 2025", "expected": "October 2025", "f1": 0.5, "faithful": true}
+{"question": "Who is the client?", "predicted": "ACME Corp", "expected": "ACME Corp", "f1": 1.0, "faithful": true}
+{"question": "What are the performance requirements?", "predicted": "The system must handle 500 concurrent users and respond to requests within 2 seconds", "expected": "500 concurrent users; 2-second response time", "f1": 0.2, "faithful": true}
+{"question": "What ERP system must the project integrate with?", "predicted": "SAP", "expected": "SAP", "f1": 1.0, "faithful": true}
+{"question": "Within how many months of deployment must ERP integration be completed?", "predicted": "Within 3 months of deployment", "expected": "3 months", "f1": 0.57, "faithful": true}
+{"question": "What is the maximum response time under heavy load?", "predicted": "Not found", "expected": "2 seconds", "f1": 0.0, "faithful": false}
+{"question": "Which security standards must the system comply with?", "predicted": "GDPR and ISO27001", "expected": "GDPR and ISO27001", "f1": 1.0, "faithful": true}
+{"question": "How many levels of role-based access are required?", "predicted": "3 levels (admin, manager, staff)", "expected": "3 levels (admin, manager, staff)", "f1": 1.0, "faithful": true}
+{"question": "What is the risk associated with vendor support?", "predicted": "Not found", "expected": "Integration may slip due to lack of vendor support", "f1": 0.0, "faithful": false}
+{"question": "What is the preferred project deadline according to stakeholders?", "predicted": "Not found", "expected": "October 2025", "f1": 0.0, "faithful": false}
+{"question": "What delivery timeline was also mentioned as a possible alternative?", "predicted": "November 2025", "expected": "November 2025", "f1": 1.0, "faithful": true}
+{"question": "What is the main priority for the warehouse staff?", "predicted": "Not found", "expected": "Mobile app", "f1": 0.0, "faithful": false}
+{"question": "How many users should the system handle concurrently?", "predicted": "Not found", "expected": "500", "f1": 0.0, "faithful": false}
+{"question": "What risk is associated with scaling beyond expected growth?", "predicted": "Not found", "expected": "Scaling beyond 500 concurrent users if company grows faster than expected", "f1": 0.0, "faithful": false}
+{"question": "What is the name of the clientâ€™s company?", "predicted": "ACME Corp", "expected": "ACME Corp", "f1": 1.0, "faithful": true}
+{"question": "What requirement was highlighted again in the meeting notes?", "predicted": "The requirement for a 2-second response time under heavy load", "expected": "2-second response time under heavy load", "f1": 0.75, "faithful": true}
+{"question": "What type of system access must be supported?", "predicted": "Role-based access", "expected": "Role-based access", "f1": 1.0, "faithful": true}
+{"question": "Which finance-related module requires integration?", "predicted": "Not found", "expected": "SAP", "f1": 0.0, "faithful": false}
+{"question": "What are the concurrency requirements for the system?", "predicted": "Not found", "expected": "500 concurrent users", "f1": 0.0, "faithful": false}
+{"question": "What are the compliance requirements?", "predicted": "The compliance requirements are GDPR and ISO27001", "expected": "GDPR and ISO27001", "f1": 0.6, "faithful": true}
