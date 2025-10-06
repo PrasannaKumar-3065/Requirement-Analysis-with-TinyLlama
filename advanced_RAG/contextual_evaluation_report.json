@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "rougeL": 0.3465250922588426,
+    "bertscore_f1": 0.5119180679321289,
+    "avg_style_score": 0.6666666666666666
+  },
+  "details": [
+    {
+      "id": 1,
+      "input": "Context: The HR system must allow employees to update personal data and generate payslips monthly.\nQuestion: Tell me about this module.",
+      "expected_style": "narrative",
+      "generated_output": "The module is called \"Personal Data and Payslip Generator\". It allows employees to update their personal data and generate payslips monthly. The module is designed to streamline the process of updating personal data and generating payslips, thereby reducing the time and effort required for employees. The module is user-friendly and intuitive, making it easy for employees to use.",
+      "reference_output": "This HR module allows employees to update personal data and automatically generates monthly payslips, ensuring transparency.",
+      "style_score": 0.5
+    },
+    {
+      "id": 2,
+      "input": "Context: The API must return data within 200 ms while another spec allows 1 second latency.\nQuestion: What is the performance requirement?",
+      "expected_style": "analytical",
+      "generated_output": "The performance requirement is that the API must return data within 200 ms while another spec allows 1 second latency.",
+      "reference_output": "The system must respond within 200 ms, but another specification allows 1 second latency, creating a conflict.",
+      "style_score": 0.5
+    },
+    {
+      "id": 3,
+      "input": "Context: The inventory management system must synchronize stock every hour.\nQuestion: What is the sync interval?",
+      "expected_style": "brief",
+      "generated_output": "The sync interval is 1 hour.",
+      "reference_output": "Every hour.",
+      "style_score": 1.0
+    }
+  ]
+}

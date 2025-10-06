@@ -1,0 +1,71 @@
+{
+  "reports": {
+    "v5_contextual": {
+      "rougeL": 0.42511476548555227,
+      "bertscore_f1": 0.5841089487075806,
+      "avg_style_score": 1.0,
+      "details": [
+        {
+          "id": 1,
+          "input": "Context: The HR system must allow employees to update personal data and generate payslips monthly.\nQuestion: Tell me about this module.",
+          "expected_style": "narrative",
+          "generated_output": "The module allows employees to update their personal data and generate payslips monthly.",
+          "reference_output": "This HR module allows employees to update personal data and automatically generates monthly payslips, ensuring transparency.",
+          "style_score": 1.0
+        },
+        {
+          "id": 2,
+          "input": "Context: The API must return data within 200 ms while another spec allows 1 second latency.\nQuestion: What is the performance requirement?",
+          "expected_style": "analytical",
+          "generated_output": "The performance requirement is that the API must return data within 200 ms while another spec allows 1 second latency.",
+          "reference_output": "The system must respond within 200 ms, but another specification allows 1 second latency, creating a conflict.",
+          "style_score": 1.0
+        },
+        {
+          "id": 3,
+          "input": "Context: The inventory management system must synchronize stock every hour.\nQuestion: What is the sync interval?",
+          "expected_style": "brief",
+          "generated_output": "Briefly, the sync interval is every hour.",
+          "reference_output": "Every hour.",
+          "style_score": 1.0
+        }
+      ]
+    },
+    "v6_self_corrective": {
+      "rougeL": 0.19629629356810704,
+      "bertscore_f1": 0.37533509731292725,
+      "avg_style_score": 0.8333333333333334,
+      "details": [
+        {
+          "id": 1,
+          "input": "Context: The HR system must allow employees to update personal data and generate payslips monthly.\nQuestion: Tell me about this module.",
+          "expected_style": "narrative",
+          "generated_output": "The module is called \"Personal Data and Payslips\" and it is designed to help employees update their personal data and generate payslips monthly.\n\nThe module is easy to use and requires minimal training. Employees can access it from their personal dashboard, which is accessible from any device.\n\nThe module is designed to be user-friendly and intuitive, making it easy for employees to navigate and update their personal data.\n\nThe module also generates payslips monthly, which is a crucial feature for employees who need to track their earnings.\n\nOverall, the Personal Data and Payslips module is a valuable addition to the HR system, helping employees manage their personal data and generate payslips in a timely and efficient manner.",
+          "reference_output": "This HR module allows employees to update personal data and automatically generates monthly payslips, ensuring transparency.",
+          "style_score": 1.0
+        },
+        {
+          "id": 2,
+          "input": "Context: The API must return data within 200 ms while another spec allows 1 second latency.\nQuestion: What is the performance requirement?",
+          "expected_style": "analytical",
+          "generated_output": "The API meets the performance requirement by returning data within 200 ms while another spec allows 1 second latency.",
+          "reference_output": "The system must respond within 200 ms, but another specification allows 1 second latency, creating a conflict.",
+          "style_score": 1.0
+        },
+        {
+          "id": 3,
+          "input": "Context: The inventory management system must synchronize stock every hour.\nQuestion: What is the sync interval?",
+          "expected_style": "brief",
+          "generated_output": "The expected accuracy of the system in synchronizing stock is within 10% of the actual stock levels.",
+          "reference_output": "Every hour.",
+          "style_score": 0.5
+        }
+      ]
+    }
+  },
+  "improvement": {
+    "rougeL": -0.22881847191744523,
+    "bertscore_f1": -0.20877385139465332,
+    "avg_style_score": -0.16666666666666663
+  }
+}

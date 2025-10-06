@@ -1,0 +1,14 @@
+{
+  "baseline": {
+    "ROUGE-L": 0.1516,
+    "BERTScore-F1": 0.8316
+  },
+  "weighted": {
+    "ROUGE-L": 0.1181,
+    "BERTScore-F1": 0.8464
+  },
+  "improvement": {
+    "ROUGE-L \u0394": -0.0334,
+    "BERTScore-F1 \u0394": 0.0148
+  }
+}

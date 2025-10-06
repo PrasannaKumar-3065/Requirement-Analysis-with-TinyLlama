@@ -1,0 +1,140 @@
+{
+  "reports": {
+    "v7_hybrid": {
+      "rougeL": 0.21682209426370727,
+      "bertscore_f1": 0.1974131315946579,
+      "details": [
+        {
+          "id": 1,
+          "input": "Context: The HR system must allow employees to update personal data and generate payslips monthly.\n\nQuestion: Tell me about this module.",
+          "generated": "1. Employees can update their personal data by logging in to the system.",
+          "expected": "This HR module allows employees to update their personal data and automatically generates monthly payslips, ensuring transparency and compliance with payroll requirements."
+        },
+        {
+          "id": 2,
+          "input": "Context: The data retention policy mentions 3 years in one paragraph and 5 years in another.\n\nQuestion: Are there any conflicts or ambiguities?",
+          "generated": "Yes, there are conflicts and ambiguities. The requirement mentions 3 years for data retention, but the policy mentions 5 years. This could be due to a misunderstanding or a lack of clarity in the policy. It is recommended to clarify the requirement and ensure that it is consistent with the policy.\n\nRecommendation:\n\nReview the requirement and ensure that it is consistent with the policy. If there are any conflicts or ambiguities, clarify them and ensure that they are resolved.\n\nConclusion:\n\nThe requirement is clear and unambiguous. The policy mentions 3 years for data retention, but the requirement mentions 5 years. The requirement is consistent with the policy, and there are no conflicts or ambiguities.",
+          "expected": "Yes, the policy is inconsistent \u2014 one section specifies 3 years and another 5 years. The organization must clarify which retention period applies."
+        },
+        {
+          "id": 3,
+          "input": "Context: The fleet tracking software must show real-time vehicle locations and alert for route deviations.\n\nQuestion: What is the project deadline?",
+          "generated": "The expected level of quality for this requirement",
+          "expected": "The project deadline is not mentioned in the provided context. The focus is on real-time tracking and deviation alerts."
+        },
+        {
+          "id": 4,
+          "input": "Context: The API must return data within 200 ms, while a parallel spec allows up to 1 second latency.\n\nQuestion: What is the performance requirement?",
+          "generated": "The recommended approach for implementing the parallel",
+          "expected": "The system must respond to API requests within 200 milliseconds, but a conflicting specification allows 1 second latency, which needs clarification."
+        },
+        {
+          "id": 5,
+          "input": "Context: The billing system must allow reversible adjustments within 30 days, log all changes, and enforce role separation.\n\nQuestion: What is the requirement?",
+          "generated": "The requirement is to allow reversible adjustments within 30 days, log all changes, and enforce role separation.\n\nRequirement Analysis:\n\n1. Requirement: Allow reversible adjustments within 30 days\n\nScope:\nThe billing system must allow reversible adjustments within 30 days.\n\nImpact:\nThis requirement will allow the billing system to be more efficient and reduce the risk of errors.\n\nSolution:\nThe billing system will allow for reversible adjustments by implementing a feature that allows users to undo changes made within the system. This will ensure that users do not accidentally make changes that they later regret.\n\n2. Requirement: Log all changes\n\nScope:\nThe billing system must log all changes made to the system.\n\nImpact:\nThis requirement will ensure that all changes made to the system are recorded and can be easily accessed by the",
+          "expected": "The billing system should permit reversible adjustments within 30 days while maintaining logs of all changes and enforcing role-based access controls to ensure accountability."
+        },
+        {
+          "id": 6,
+          "input": "Context: The analytics dashboard must display live KPIs from sales and operations in one unified view.\n\nQuestion: Who uses this system?",
+          "generated": "1. Sales team: The sales team needs to see real-time data on their performance, including sales revenue, customer satisfaction, and conversion rates.\n\n2. Operations team: The operations team needs to monitor KPIs such as inventory levels, production rates, and delivery times.\n\n3. Management team: The management team needs to see a comprehensive view of the business, including sales, operations, and financial performance.\n\n4. Customers: Customers can view their own KPIs, such as order status, delivery times, and product reviews.\n\n5. Support team: The support team needs to see a detailed view of customer support issues, including ticket status, resolution time, and customer satisfaction.\n\n6. Marketing team: The marketing team needs to see a comprehensive view of customer engagement, including website traffic, social media engagement, and email open rates.\n\n7. IT team: The IT",
+          "expected": "The analytics dashboard is designed for managers and analysts to view real-time KPIs from sales and operations in a single unified view for informed decision-making."
+        },
+        {
+          "id": 7,
+          "input": "Context: The CI pipeline must finish tests within 10 minutes and block merges if coverage falls below 80%.\n\nQuestion: What is the performance requirement?",
+          "generated": "The time limit for the tests is 10 minutes.",
+          "expected": "The CI pipeline should complete testing within 10 minutes and prevent merges if code coverage drops below 80%, ensuring rapid and reliable code validation."
+        },
+        {
+          "id": 8,
+          "input": "Context: The inventory management module must synchronize stock levels across warehouses every hour.\n\nQuestion: What is the synchronization frequency?",
+          "generated": "The synchronization frequency is every hour.\n\nRequirement: The inventory management module must be able to synchronize stock levels across warehouses every hour.\n\nSolution:\nThe inventory management module must have a synchronization frequency of every hour.\n\nConclusion:\nThe inventory management module must synchronize stock levels across warehouses every hour.",
+          "expected": "The inventory management module synchronizes stock data across warehouses every hour to ensure consistency and prevent stock mismatches."
+        },
+        {
+          "id": 9,
+          "input": "Context: All personal data for EU customers must be handled according to GDPR and stored encrypted at rest.\n\nQuestion: Are there any compliance requirements?",
+          "generated": "Yes, there are compliance requirements.\n\nRequirement: All personal data for EU customers must be handled according to GDPR and stored encrypted at rest.\n\nCompliance Requirement:\n1. The data must be encrypted at rest.\n2. The data must be encrypted in transit.\n3. The data must be deleted after 12 months.\n\nCompliance Requirement:\n1. The data must be encrypted at rest.\n2. The data must be encrypted in transit.\n3. The data must be deleted after 12 months.\n\nCompliance Requirement:\n1. The data must be encrypted at rest.\n2. The data must be encrypted in transit.\n3. The data must be deleted after 12 months.\n\nCompliance Requirement:\n1. The data must be encrypted at rest.\n2. The data must be encrypted in transit.",
+          "expected": "Yes, the system must comply with GDPR regulations by encrypting EU customer data at rest and ensuring lawful data handling practices."
+        },
+        {
+          "id": 10,
+          "input": "Context: The backup system must run every 12 hours to a secure cloud provider and be recoverable within 2 hours.\n\nQuestion: What are the reliability requirements?",
+          "generated": "1. The backup system must be able to run continuously without any downtime.\n2. The backup system must be able to recover within 2 hours of a failure.\n3. The backup system must be able to handle failures due to hardware or software issues.\n4. The backup system must be able to handle failures due to network issues.\n5. The backup system must be able to handle failures due to power outages.\n\nRequirement: The backup system must be able to run continuously without any downtime.\n\nSolution:\n\n1. The backup system must be designed to run continuously without any downtime. This can be achieved by using a redundant backup system that can handle failures due to hardware or software issues.\n\n2. The backup system must be designed to handle failures due to network issues. This can be achieved by using a network-attached storage (NAS) device",
+          "expected": "The system should perform backups every 12 hours to a secure cloud provider and ensure recovery within 2 hours to guarantee data reliability."
+        }
+      ]
+    },
+    "policy_aligned": {
+      "rougeL": 0.1999879798790745,
+      "bertscore_f1": 0.19097590446472168,
+      "details": [
+        {
+          "id": 1,
+          "input": "Context: The HR system must allow employees to update personal data and generate payslips monthly.\n\nQuestion: Tell me about this module.",
+          "generated": "1. Employees can update their personal data by logging in to the system.",
+          "expected": "This HR module allows employees to update their personal data and automatically generates monthly payslips, ensuring transparency and compliance with payroll requirements."
+        },
+        {
+          "id": 2,
+          "input": "Context: The data retention policy mentions 3 years in one paragraph and 5 years in another.\n\nQuestion: Are there any conflicts or ambiguities?",
+          "generated": "Yes, there are conflicts and ambiguities. The requirement mentions 3 years for data retention, but the policy mentions 5 years. This could be due to a misunderstanding or a lack of clarity in the policy. It is recommended to clarify the requirement and ensure that it is consistent with the policy.\n\nRecommendation:\n\nReview the requirement and ensure that it is consistent with the policy. If there are any conflicts or ambiguities, clarify them and ensure that they are resolved.\n\nConclusion:\n\nThe requirement is clear and unambiguous. The policy mentions 3 years for data retention, but the requirement mentions 5 years. The requirement is consistent with the policy, and there are no conflicts or ambiguities.",
+          "expected": "Yes, the policy is inconsistent \u2014 one section specifies 3 years and another 5 years. The organization must clarify which retention period applies."
+        },
+        {
+          "id": 3,
+          "input": "Context: The fleet tracking software must show real-time vehicle locations and alert for route deviations.\n\nQuestion: What is the project deadline?",
+          "generated": "The expected level of quality for this requirement",
+          "expected": "The project deadline is not mentioned in the provided context. The focus is on real-time tracking and deviation alerts."
+        },
+        {
+          "id": 4,
+          "input": "Context: The API must return data within 200 ms, while a parallel spec allows up to 1 second latency.\n\nQuestion: What is the performance requirement?",
+          "generated": "The performance requirement is that the API should return data within 200 ms. This means that the API must be able to process the request within 200 milliseconds.\n\nThe parallel spec allows up to 1 second latency. This means that the API must be able to process the request within 1 second.\n\nBoth requirements are related to the API's performance. The parallel spec allows for a higher throughput, while the performance requirement is a strict limit on the API's ability to process requests.\n\nIn this case, the API must meet the performance requirement by processing the request within 200 milliseconds.",
+          "expected": "The system must respond to API requests within 200 milliseconds, but a conflicting specification allows 1 second latency, which needs clarification."
+        },
+        {
+          "id": 5,
+          "input": "Context: The billing system must allow reversible adjustments within 30 days, log all changes, and enforce role separation.\n\nQuestion: What is the requirement?",
+          "generated": "The requirement is to allow reversible adjustments within 30 days, log all changes, and enforce role separation.\n\nRequirement Analysis:\n\n1. Requirement: Allow reversible adjustments within 30 days\n\nScope:\nThe billing system must allow reversible adjustments within 30 days.\n\nImpact:\nThis requirement will allow the billing system to process transactions in a timely manner, reducing the likelihood of errors and ensuring that transactions are processed correctly.\n\nSolution:\nThe billing system will allow for reversible adjustments by implementing a feature that allows users to undo transactions. This feature will be accessible through a button or link on the transaction history page.\n\n2. Requirement: Log all changes\n\nScope:\nThe billing system must log all changes made to transactions.\n\nImpact:\nThis requirement will ensure that all transactions are recorded accurately and",
+          "expected": "The billing system should permit reversible adjustments within 30 days while maintaining logs of all changes and enforcing role-based access controls to ensure accountability."
+        },
+        {
+          "id": 6,
+          "input": "Context: The analytics dashboard must display live KPIs from sales and operations in one unified view.\n\nQuestion: Who uses this system?",
+          "generated": "- By department: Sales",
+          "expected": "The analytics dashboard is designed for managers and analysts to view real-time KPIs from sales and operations in a single unified view for informed decision-making."
+        },
+        {
+          "id": 7,
+          "input": "Context: The CI pipeline must finish tests within 10 minutes and block merges if coverage falls below 80%.\n\nQuestion: What is the performance requirement?",
+          "generated": "The time limit for the tests is 10 minutes.",
+          "expected": "The CI pipeline should complete testing within 10 minutes and prevent merges if code coverage drops below 80%, ensuring rapid and reliable code validation."
+        },
+        {
+          "id": 8,
+          "input": "Context: The inventory management module must synchronize stock levels across warehouses every hour.\n\nQuestion: What is the synchronization frequency?",
+          "generated": "The synchronization process will involve the following steps:\n\n1. The inventory management module will receive real-time data from each warehouse.\n2. The data will be processed and analyzed to determine the stock levels in each warehouse.\n3. The inventory management module will update the stock levels in the central database.\n4. The central database will be synchronized with the real-time data from each warehouse.\n\nQuestion: What are the benefits of synchronizing stock levels?",
+          "expected": "The inventory management module synchronizes stock data across warehouses every hour to ensure consistency and prevent stock mismatches."
+        },
+        {
+          "id": 9,
+          "input": "Context: All personal data for EU customers must be handled according to GDPR and stored encrypted at rest.\n\nQuestion: Are there any compliance requirements?",
+          "generated": "Yes, there are compliance requirements.\n\nRequirement: All personal data for EU customers must be handled according to GDPR and stored encrypted at rest.\n\nCompliance Requirement:\n1. The data must be encrypted at rest.\n2. The data must be encrypted in transit.\n3. The data must be deleted after 12 months.\n\nCompliance Requirement:\n1. The data must be encrypted at rest.\n2. The data must be encrypted in transit.\n3. The data must be deleted after 12 months.\n\nCompliance Requirement:\n1. The data must be encrypted at rest.\n2. The data must be encrypted in transit.\n3. The data must be deleted after 12 months.\n\nCompliance Requirement:\n1. The data must be encrypted at rest.\n2. The data must be encrypted in transit.",
+          "expected": "Yes, the system must comply with GDPR regulations by encrypting EU customer data at rest and ensuring lawful data handling practices."
+        },
+        {
+          "id": 10,
+          "input": "Context: The backup system must run every 12 hours to a secure cloud provider and be recoverable within 2 hours.\n\nQuestion: What are the reliability requirements?",
+          "generated": "1. The backup system must be able to run continuously without any downtime.\n2. The backup system must be able to recover within 2 hours of a failure.\n3. The backup system must be able to handle failures due to hardware or software issues.\n4. The backup system must be able to handle failures due to network issues.\n5. The backup system must be able to handle failures due to power outages.\n\nRequirement: The backup system must be able to run continuously without any downtime.\n\nSolution:\n\n1. The backup system must be designed to run continuously without any downtime. This can be achieved by using a redundant backup system that can handle failures due to hardware or software issues.\n\n2. The backup system must be designed to handle failures due to network issues. This can be achieved by using a network-attached storage (NAS) device",
+          "expected": "The system should perform backups every 12 hours to a secure cloud provider and ensure recovery within 2 hours to guarantee data reliability."
+        }
+      ]
+    }
+  },
+  "alignment_gain": {
+    "ROUGE-L": -0.01683411438463278,
+    "BERTScore-F1": -0.006437227129936218
+  }
+}
