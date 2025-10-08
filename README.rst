@@ -1,4 +1,4 @@
-isoTracker Requirement Analysis AI
+Requirement Analysis AI
 =================================
 
 This project provides an AI-powered pipeline for requirement analysis using Retrieval-Augmented Generation (RAG) and transformer models. It supports document chunking, semantic search, answer generation, and evaluation with multiple metrics.
